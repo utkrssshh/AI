@@ -17,7 +17,7 @@ openai.api_key = api_key
 while True:
     def get_adio():
         r = sr.Recognizer()
-        with sr.Microphone(device_index=0) as source:
+        with sr.Microphone(device_index=1) as source:
             audio = r.listen(source)
             said = ""
 
